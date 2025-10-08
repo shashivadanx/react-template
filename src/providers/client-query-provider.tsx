@@ -7,14 +7,12 @@ import {
 import { handleServerError } from "@/lib/handle-server-error";
 import { AxiosError } from "axios";
 import { toast } from "sonner";
-import { useNavigate } from "react-router";
 
 export default function ClientQueryProvider({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const navigate = useNavigate();
   const queryClient = new QueryClient({
     defaultOptions: {
       mutations: {
@@ -35,11 +33,11 @@ export default function ClientQueryProvider({
             case 401: {
               toast.error("Session expired!");
               const redirect = encodeURIComponent(window.location.href);
-              navigate(`/login?redirect=${redirect}`);
+              window.location.assign(`/login?redirect=${redirect}`);
               break;
             }
             case 403: {
-              navigate("/403");
+              window.location.replace("/403");
               break;
             }
             case 500: {
