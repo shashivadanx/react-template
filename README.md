@@ -11,11 +11,12 @@ A modern, production-ready React application template built with TypeScript, Vit
 - **React Router** - Client-side routing for single-page applications
 
 ### Styling & UI
-- **Tailwind CSS v4** - Utility-first CSS framework with custom theming
-- **Radix UI** - Accessible, customizable component primitives
-- **Lucide React** - Beautiful & consistent icon library
-- **tw-animate-css** - Animation utilities for Tailwind
-- **Custom Design System** - Consistent color tokens and theming with dark mode support
+- **Tailwind CSS v4** – Utility-first CSS framework
+- **ShadCN UI** – Accessible and customizable React components
+- **Radix UI** – Component primitives
+- **Lucide React** – Icon library
+- **tw-animate-css** – Tailwind animations
+- **Custom Design System** – Dark mode & consistent theming
 
 ### State Management & Data Fetching
 - **TanStack React Query** - Powerful data synchronization for React
